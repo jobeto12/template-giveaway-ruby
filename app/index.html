@@ -148,6 +148,8 @@
               name="email-form"
               class="email-component"
               netlify
+              netlify-honeypot="bot-field" 
+              data-netlify="true"
             >
               <input
                 type="email"
@@ -161,6 +163,9 @@
                 Get Early Access
                 <img src="img/ico-arrow2.svg" alt="" />
               </button>
+               <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
             </form>
           </div>
         </div>
